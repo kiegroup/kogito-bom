@@ -55,6 +55,8 @@
     <version.com.fasterxml.jackson>2.9.5</version.com.fasterxml.jackson>
     <version.kubernetes-client>4.1.1</version.kubernetes-client>
     <version.okhttp>3.9.0</version.okhttp>
+    <version.io.prometheus>0.5.0</version.io.prometheus>
+    <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
         
     <version.io.quarkus>0.13.1</version.io.quarkus>    
 
@@ -235,6 +237,23 @@
         <groupId>io.fabric8</groupId>
         <artifactId>kubernetes-client</artifactId>
         <version>${version.kubernetes-client}</version>
+      </dependency>
+      <!-- metrics - prometheus -->
+      <dependency>
+        <groupId>io.prometheus</groupId>
+        <artifactId>simpleclient</artifactId>
+        <version>${version.io.prometheus}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.prometheus</groupId>
+        <artifactId>simpleclient_common</artifactId>
+        <version>${version.io.prometheus}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.jboss.spec.javax.ws.rs</groupId>
+        <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+        <version>${version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec}</version>
       </dependency>
     
       <dependency>
