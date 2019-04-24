@@ -30,6 +30,7 @@
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
 
     <checkstyle.header.template>.*</checkstyle.header.template>
     <checkstyle.header.extensions>java</checkstyle.header.extensions>
@@ -51,19 +52,23 @@
     <version.javax.activation>1.2.0</version.javax.activation>
     <version.com.google.protobuf>3.6.1</version.com.google.protobuf>
     <version.org.eclipse.jdt.core.compiler>4.6.1</version.org.eclipse.jdt.core.compiler>
-    <version.com.github.javaparser>3.10.2</version.com.github.javaparser>  
+    <version.com.github.javaparser>3.10.2</version.com.github.javaparser>
     <version.com.fasterxml.jackson>2.9.5</version.com.fasterxml.jackson>
     <version.kubernetes-client>4.1.1</version.kubernetes-client>
     <version.okhttp>3.9.0</version.okhttp>
     <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
-        
-    <version.io.quarkus>0.13.1</version.io.quarkus>    
+    <version.swagger>1.5.21</version.swagger>
+    <version.cz.xtf>0.10</version.cz.xtf>
+    <version.antapacheregexp>1.8.2</version.antapacheregexp>
+
+    <version.io.quarkus>0.13.1</version.io.quarkus>
 
     <version.junit>4.12</version.junit>
     <version.org.assertj>3.8.0</version.org.assertj>
     <version.org.hamcrest>1.3</version.org.hamcrest>
     <version.org.mockito>1.10.19</version.org.mockito>
+    <version.io.restassured>3.3.0</version.io.restassured>
     <version.ch.qos.logback>1.1.3</version.ch.qos.logback>
     <version.net.java.dev.glazedlists>1.8.0</version.net.java.dev.glazedlists>
     <version.ch.obermuhlner>2.0.1</version.ch.obermuhlner>
@@ -74,6 +79,34 @@
     <version.plexus>1.6</version.plexus>
     <version.plexus.classworld>2.5.2</version.plexus.classworld>
     <version.plugin.plugin>3.5.2</version.plugin.plugin>
+    <version.surefire>2.22.1</version.surefire>
+    <version.clean.plugin>3.1.0</version.clean.plugin>
+    <version.install.plugin>2.5.2</version.install.plugin>
+    <version.site.plugin>3.7.1</version.site.plugin>
+    <version.dependency.plugin>2.8</version.dependency.plugin>
+    <version.deploy.plugin>2.8.2</version.deploy.plugin>
+    <version.compiler.plugin>3.8.0-jboss-1</version.compiler.plugin>
+    <version.antrun.plugin>1.8</version.antrun.plugin>
+    <version.resources.plugin>3.1.0</version.resources.plugin>
+    <version.exec.plugin>1.6.0</version.exec.plugin>
+    <version.jar.plugin>3.1.0</version.jar.plugin>
+    <version.source.plugin>3.0.1</version.source.plugin>
+    <version.project.sources.plugin>0.3</version.project.sources.plugin>
+    <version.build.helper.plugin>3.0.0</version.build.helper.plugin>
+    <version.asciidoctor.plugin>1.5.2.1</version.asciidoctor.plugin>
+    <version.native2ascii.plugin>1.0-beta-1</version.native2ascii.plugin>
+    <version.copyrename.plugin>1.0</version.copyrename.plugin>
+    <version.jdocbook.plugin>2.3.9</version.jdocbook.plugin>
+    <version.invoker.plugin>2.0.0</version.invoker.plugin>
+    <version.versions.plugin>2.1</version.versions.plugin>
+    <version.shade.plugin>3.0.0</version.shade.plugin>
+    <version.license.plugin>1.8.0</version.license.plugin>
+    <version.javadoc.plugin>3.0.1</version.javadoc.plugin>
+    <version.findbugs.plugin>3.0.5</version.findbugs.plugin>
+    <version.swagger.plugin>3.1.8</version.swagger.plugin>
+    <version.surefire.report.plugin>2.6</version.surefire.report.plugin>
+    <version.javancss.plugin>2.0</version.javancss.plugin>
+    <version.taglist.plugin>2.4</version.taglist.plugin>
   </properties>
 
   <!-- distributionManagement section -->
@@ -133,6 +166,11 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>
+        <version>${version.org.slf4j}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-nop</artifactId>
         <version>${version.org.slf4j}</version>
       </dependency>
 
@@ -206,14 +244,14 @@
         <artifactId>big-math</artifactId>
         <version>${version.ch.obermuhlner}</version>
       </dependency>
-      
+
       <!-- code generation -->
       <dependency>
         <groupId>com.github.javaparser</groupId>
         <artifactId>javaparser-core</artifactId>
         <version>${version.com.github.javaparser}</version>
       </dependency>
-      
+
       <!-- marshalling -->
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -225,7 +263,7 @@
         <artifactId>jackson-databind</artifactId>
         <version>${version.com.fasterxml.jackson}</version>
       </dependency>
-      
+
       <!-- http communication -->
       <dependency>
         <groupId>com.squareup.okhttp3</groupId>
@@ -249,13 +287,13 @@
         <artifactId>simpleclient_common</artifactId>
         <version>${version.io.prometheus}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>org.jboss.spec.javax.ws.rs</groupId>
         <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
         <version>${version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec}</version>
       </dependency>
-    
+
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -355,6 +393,46 @@
         <artifactId>javax.activation</artifactId>
         <version>${version.javax.activation}</version>
       </dependency>
+
+      <!-- Quarkus -->
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-resteasy</artifactId>
+        <version>${version.io.quarkus}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-arc</artifactId>
+        <version>${version.io.quarkus}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-junit5</artifactId>
+        <version>${version.io.quarkus}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>${version.io.restassured}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>${version.swagger}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>cz.xtf</groupId>
+        <artifactId>core</artifactId>
+        <version>${version.cz.xtf}</version>
+      </dependency>
+      <dependency>
+        <groupId>cz.xtf</groupId>
+        <artifactId>builder</artifactId>
+        <version>${version.cz.xtf}</version>
+      </dependency>
     </dependencies>
 
   </dependencyManagement>
@@ -393,7 +471,7 @@
       <plugins>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>${version.clean.plugin}</version>
           <executions>
             <execution>
               <id>default-clean</id>
@@ -405,48 +483,52 @@
           </executions>
         </plugin>
         <plugin>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>2.5.2</version>
-        <executions>
-          <execution>
-            <id>default-install</id>
-            <phase>install</phase>
-            <goals>
-              <goal>install</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.7.1</version>
-        <executions>
-          <execution>
-            <id>default-site</id>
-            <phase>site</phase>
-            <goals>
-              <goal>site</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>${version.install.plugin}</version>
+          <executions>
+            <execution>
+              <id>default-install</id>
+              <phase>install</phase>
+              <goals>
+                <goal>install</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>${version.site.plugin}</version>
+          <executions>
+            <execution>
+              <id>default-site</id>
+              <phase>site</phase>
+              <goals>
+                <goal>site</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>${version.dependency.plugin}</version>
+        </plugin>
+        <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
+          <version>${version.deploy.plugin}</version>
           <configuration>
             <retryFailedDeploymentCount>10</retryFailedDeploymentCount>
           </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0-jboss-1</version>
+          <version>${version.compiler.plugin}</version>
           <configuration>
             <showDeprecation>true</showDeprecation>
             <showWarnings>true</showWarnings>
-            <source>1.8</source>
-            <target>1.8</target>
-            <testSource>1.8</testSource>
-            <testTarget>1.8</testTarget>
+            <source>${maven.compiler.source}</source>
+            <target>${maven.compiler.target}</target>
+            <testSource>${maven.compiler.source}</testSource>
+            <testTarget>${maven.compiler.target}</testTarget>
             <compilerArgs>
               <arg>-Xlint:unchecked</arg>
             </compilerArgs>
@@ -454,19 +536,19 @@
         </plugin>
         <plugin>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>1.8</version>
+          <version>${version.antrun.plugin}</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.ant</groupId>
               <artifactId>ant-apache-regexp</artifactId>
-              <version>1.8.2</version>
+              <version>${version.antapacheregexp}</version>
             </dependency>
           </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>${version.resources.plugin}</version>
           <configuration>
             <encoding>UTF-8</encoding>
           </configuration>
@@ -474,7 +556,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+          <version>${version.surefire}</version>
           <configuration>
             <includes>
               <include>**/*Test.java</include>
@@ -492,30 +574,15 @@
           </configuration>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-failsafe-plugin</artifactId>
-          <version>2.22.1</version>
-          <executions>
-            <execution>
-              <goals>
-                <goal>integration-test</goal>
-                <goal>verify</goal>
-              </goals>
-            </execution>
-          </executions>
-          <configuration>
-            <includes>
-              <include>**/*IntegrationTest.java</include>
-              <include>**/*IT.java</include>
-            </includes>
-            <argLine>-Xmx1024m -Dfile.encoding=UTF-8</argLine>
-          </configuration>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>${version.exec.plugin}</version>
         </plugin>
         <!-- Packaging -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>${version.jar.plugin}</version>
           <executions>
             <execution>
               <id>default-jar</id>
@@ -562,7 +629,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>${version.source.plugin}</version>
           <executions>
             <execution>
               <id>attach-sources</id>
@@ -605,7 +672,7 @@
         <plugin>
           <groupId>org.commonjava.maven.plugins</groupId>
           <artifactId>project-sources-maven-plugin</artifactId>
-          <version>0.3</version>
+          <version>${version.project.sources.plugin}</version>
           <executions>
             <execution>
               <id>project-sources-archive</id>
@@ -619,7 +686,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>${version.build.helper.plugin}</version>
           <executions>
             <execution>
               <goals>
@@ -631,17 +698,17 @@
         <plugin>
           <groupId>org.asciidoctor</groupId>
           <artifactId>asciidoctor-maven-plugin</artifactId>
-          <version>1.5.2.1</version>
+          <version>${version.asciidoctor.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>native2ascii-maven-plugin</artifactId>
-          <version>1.0-beta-1</version>
+          <version>${version.native2ascii.plugin}</version>
         </plugin>
         <plugin>
           <groupId>com.coderplus.maven.plugins</groupId>
           <artifactId>copy-rename-maven-plugin</artifactId>
-          <version>1.0</version>
+          <version>${version.copyrename.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -651,19 +718,19 @@
               <!-- Entry needed to enable jdocbook unzipping -->
               <groupId>org.jboss.maven.plugins</groupId>
               <artifactId>maven-jdocbook-plugin</artifactId>
-              <version>2.3.9</version>
+              <version>${version.jdocbook.plugin}</version>
             </dependency>
           </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-invoker-plugin</artifactId>
-          <version>2.0.0</version>
+          <version>${version.invoker.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
-          <version>2.1</version>
+          <version>${version.versions.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -677,12 +744,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-shade-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>${version.shade.plugin}</version>
         </plugin>
         <plugin>
           <groupId>com.mycila.maven-license-plugin</groupId>
           <artifactId>maven-license-plugin</artifactId>
-          <version>1.8.0</version>
+          <version>${version.license.plugin}</version>
           <configuration>
             <!-- TODO this is buggy as it only works for first level modules -->
             <header>${basedir}/../LICENSE-ASL-2.0-HEADER.txt</header>
@@ -699,7 +766,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>${version.javadoc.plugin}</version>
           <configuration>
             <links>
               <link>http://docs.oracle.com/javase/8/docs/api</link>
@@ -715,7 +782,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>findbugs-maven-plugin</artifactId>
-          <version>3.0.5</version>
+          <version>${version.findbugs.plugin}</version>
           <configuration>
             <maxRank>6</maxRank>
             <effort>Max</effort>
@@ -733,6 +800,16 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
           <version>${version.plugin.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>io.quarkus</groupId>
+          <artifactId>quarkus-maven-plugin</artifactId>
+          <version>${version.io.quarkus}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.github.kongchen</groupId>
+          <artifactId>swagger-maven-plugin</artifactId>
+          <version>${version.swagger.plugin}</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -787,7 +864,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>2.6</version>
+        <version>${version.surefire.report.plugin}</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -799,12 +876,12 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>javancss-maven-plugin</artifactId>
-        <version>2.0</version>
+        <version>${version.javancss.plugin}</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>taglist-maven-plugin</artifactId>
-        <version>2.4</version>
+        <version>${version.taglist.plugin}</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -821,5 +898,98 @@
     <module>kie-dmn-bom</module>
   </modules>
 
+  <profiles>
+    <profile>
+      <id>default-profile</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-failsafe-plugin</artifactId>
+              <version>${version.surefire}</version>
+              <executions>
+                <execution>
+                  <goals>
+                    <goal>integration-test</goal>
+                    <goal>verify</goal>
+                  </goals>
+                  <configuration>
+                    <includes>
+                      <include>**/*IntegrationTest.java</include>
+                      <include>**/*IT.java</include>
+                    </includes>
+                    <excludes>
+                      <exclude>**/Native*IntegrationTest.java</exclude>
+                      <exclude>**/Native*IT.java</exclude>
+                    </excludes>
+                    <argLine>-Xmx1024m -Dfile.encoding=UTF-8</argLine>
+                    <systemProperties>
+                      <native.image.path>${project.build.directory}/${project.build.finalName}-runner
+                      </native.image.path>
+                    </systemProperties>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+    <profile>
+      <id>native</id>
+      <activation>
+        <property>
+          <name>native</name>
+        </property>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>io.quarkus</groupId>
+              <artifactId>quarkus-maven-plugin</artifactId>
+              <version>${version.io.quarkus}</version>
+              <executions>
+                <execution>
+                  <goals>
+                    <goal>native-image</goal>
+                  </goals>
+                  <configuration>
+                    <enableHttpUrlHandler>true</enableHttpUrlHandler>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+            <plugin>
+              <artifactId>maven-failsafe-plugin</artifactId>
+              <version>${version.surefire}</version>
+              <executions>
+                <execution>
+                  <goals>
+                    <goal>integration-test</goal>
+                    <goal>verify</goal>
+                  </goals>
+                  <configuration>
+                    <includes>
+                      <include>**/*IntegrationTest.java</include>
+                      <include>**/*IT.java</include>
+                    </includes>
+                    <argLine>-Xmx1024m -Dfile.encoding=UTF-8</argLine>
+                    <systemProperties>
+                      <native.image.path>${project.build.directory}/${project.build.finalName}-runner
+                      </native.image.path>
+                    </systemProperties>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
 
 </project>
