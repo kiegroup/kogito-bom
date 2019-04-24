@@ -927,10 +927,6 @@
                       <exclude>**/Native*IT.java</exclude>
                     </excludes>
                     <argLine>-Xmx1024m -Dfile.encoding=UTF-8</argLine>
-                    <systemProperties>
-                      <native.image.path>${project.build.directory}/${project.build.finalName}-runner
-                      </native.image.path>
-                    </systemProperties>
                   </configuration>
                 </execution>
               </executions>
