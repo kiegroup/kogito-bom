@@ -895,8 +895,7 @@
     <module>kie-bom</module>
     <module>drools-bom</module>
     <module>optaplanner-bom</module>
-    <module>jbpm-bom</module>
-    <module>kie-dmn-bom</module>
+    <module>jbpm-bom</module>  
   </modules>
 
   <profiles>
