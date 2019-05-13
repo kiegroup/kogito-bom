@@ -60,7 +60,7 @@
     <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
     <version.swagger>1.5.21</version.swagger>
-    <version.cz.xtf>0.10</version.cz.xtf>
+    <version.cz.xtf>0.11</version.cz.xtf>
     <version.antapacheregexp>1.8.2</version.antapacheregexp>
 
     <version.io.quarkus>0.13.1</version.io.quarkus>
