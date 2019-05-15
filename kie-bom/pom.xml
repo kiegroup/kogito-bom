@@ -109,7 +109,31 @@
         <artifactId>submarine-codegen</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
-      </dependency>    
+      </dependency>  
+      
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>monitoring-prometheus-addon</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>monitoring-prometheus-addon</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency> 
+      
+      <dependency>
+        <groupId>org.submarine</groupId>
+        <artifactId>submarine-cloud-workitems</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.submarine</groupId>
+        <artifactId>submarine-cloud-workitems</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>   
     </dependencies>
   </dependencyManagement>
 
