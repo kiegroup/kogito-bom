@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.kie.kogito</groupId>
+    <artifactId>kogito-bom-parent</artifactId>
+    <version>8.0.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>kogito-bom</artifactId>
+  <packaging>pom</packaging>
+
+  <name>Kogito BOM (Bill Of Materials)</name>
+  <description>
+    Import this BOM in your dependencyManagement if you want to depend on multiple KIE artifacts.
+  </description>
+
+  <dependencyManagement>
+    <dependencies>
+      <!--
+          Declare all dependency versions. Do not declare <scope> or <optional>.
+          Each module should declare it's direct dependencies and possibly overwrite scope/optional.
+          Always declare the sources jar too and optionally the test-jar.
+      -->
+
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-api</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-api</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-api</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>javadoc</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-internal</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-internal</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-internal</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>javadoc</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-services</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-services</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-services</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>javadoc</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-maven-plugin</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-maven-plugin</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-codegen</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-codegen</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>monitoring-prometheus-addon</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>monitoring-prometheus-addon</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-cloud-workitems</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-cloud-workitems</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>

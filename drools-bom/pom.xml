@@ -4,13 +4,13 @@
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.kie</groupId>
-    <artifactId>submarine-bom</artifactId>
+    <groupId>org.kie.kogito</groupId>
+    <artifactId>kogito-bom-parent</artifactId>
     <version>8.0.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <groupId>org.drools</groupId>
+  <groupId>org.kie.kogito</groupId>
   <artifactId>drools-bom</artifactId>
   <packaging>pom</packaging>
 
@@ -27,10 +27,10 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-bom</artifactId>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-bom</artifactId>
         <type>pom</type>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <scope>import</scope>
       </dependency>
       <!--
@@ -45,148 +45,168 @@
       -->
       <!-- drools -->
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-reflective</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-reflective</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-reflective</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-static</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-static</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-static</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <!-- Drools Model -->
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-canonical-model</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-canonical-model</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-canonical-model</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-constraint-parser</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-constraint-parser</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-constraint-parser</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <!-- /Drools Model -->
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>${version.org.kie}</version>
+        <version>${version.org.kie.kogito}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+
+      <!-- DMN -->
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-dmn-rest-utils</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-dmn-rest-utils</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-dmn-rest-utils</artifactId>
+        <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>

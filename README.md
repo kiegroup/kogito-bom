@@ -1,1 +1,1 @@
-# submarine-bom
+# kogito-bom

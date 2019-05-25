@@ -4,18 +4,18 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.kie</groupId>
-  <artifactId>submarine-bom</artifactId>
+  <groupId>org.kie.kogito</groupId>
+  <artifactId>kogito-bom-parent</artifactId>
   <version>8.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
+  <name>Kogito parent</name>
   <description>
     The parent contains all metadata (including plugins) including dependency versions. All modules, except for user BOMS,
     should (transitively) inherit from this parent.
   </description>
-  <url>http://www.kiegroup.org</url>
-  <inceptionYear>2001</inceptionYear>
+  <url>http://kogito.kie.org</url>
+  <inceptionYear>2019</inceptionYear>
   <organization>
     <name>JBoss by Red Hat</name>
     <url>http://www.jboss.org/</url>
@@ -36,18 +36,18 @@
     <checkstyle.header.template>.*</checkstyle.header.template>
     <checkstyle.header.extensions>java</checkstyle.header.extensions>
     <!-- Internal dependencies -->
-    <version.org.kie>8.0.0-SNAPSHOT</version.org.kie>
-    <version.org.drools>${version.org.kie}</version.org.drools>
-    <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
-    <version.org.jbpm>${version.org.kie}</version.org.jbpm>
-    <version.org.drools.droolsjbpm-integration>${version.org.kie}</version.org.drools.droolsjbpm-integration>
+    <version.org.kie.kogito>8.0.0-SNAPSHOT</version.org.kie.kogito>
+    <version.org.drools>${version.org.kie.kogito}</version.org.drools>
+    <version.org.optaplanner>${version.org.kie.kogito}</version.org.optaplanner>
+    <version.org.jbpm>${version.org.kie.kogito}</version.org.jbpm>
+    <version.org.drools.droolsjbpm-integration>${version.org.kie.kogito}</version.org.drools.droolsjbpm-integration>
 
     <!-- dependencies versions -->
     <version.org.antlr>3.5.2</version.org.antlr>
     <version.org.antlr4>4.5.3</version.org.antlr4>
     <version.org.slf4j>1.7.25</version.org.slf4j>
     <version.org.mvel>2.4.4.Final</version.org.mvel>
-    <version.org.kie7>7.20.0.Final</version.org.kie7>
+    <version.org.kie7>7.22.0.Final</version.org.kie7>
     <version.com.thoughtworks.xstream>1.4.10</version.com.thoughtworks.xstream>
     <version.jaxb>2.3.0</version.jaxb>
     <version.javax.activation>1.2.0</version.javax.activation>
@@ -922,11 +922,9 @@
   </reporting>
 
   <modules>
-    <module>kie-bom</module>
+    <module>kogito-bom</module>
     <module>drools-bom</module>
-    <module>optaplanner-bom</module>
     <module>jbpm-bom</module>
-    <module>kie-dmn-bom</module>
   </modules>
 
   <profiles>
