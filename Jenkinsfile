@@ -18,18 +18,18 @@ pipeline {
                 sh 'printenv'
             }
         }
-        stage('Build submarine-bom') {
+        stage('Build kogito-bom') {
             steps {
                 script {
                     maven.runMavenWithSubmarineSettings('clean install', false)
                 }
             }
         }
-        stage('Build submarine-runtimes') {
+        stage('Build kogito-runtimes') {
             steps {
-                dir("submarine-runtimes") {
+                dir("kogito-runtimes") {
                     script {
-                        githubscm.checkoutIfExists('submarine-runtimes', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
+                        githubscm.checkoutIfExists('kogito-runtimes', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
                         maven.runMavenWithSubmarineSettings('clean install', false)
                     }
                 }
@@ -37,19 +37,19 @@ pipeline {
         }
         stage('Build submarine-cloud') {
             steps {
-                dir("submarine-cloud") {
+                dir("kogito-cloud") {
                     script {
-                        githubscm.checkoutIfExists('submarine-cloud', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
+                        githubscm.checkoutIfExists('kogito-cloud', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
                         maven.runMavenWithSubmarineSettings('clean install', false)
                     }
                 }
             }
         }
-        stage('Build submarine-examples') {
+        stage('Build kogito-examples') {
             steps {
-                dir("submarine-examples") {
+                dir("kogito-examples") {
                     script {
-                        githubscm.checkoutIfExists('submarine-examples', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
+                        githubscm.checkoutIfExists('kogito-examples', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
                         maven.runMavenWithSubmarineSettings('clean install', false)
                     }
                 }
