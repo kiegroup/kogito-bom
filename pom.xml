@@ -54,7 +54,7 @@
     <version.com.google.protobuf>3.6.1</version.com.google.protobuf>
     <version.org.eclipse.jdt.core.compiler>4.6.1</version.org.eclipse.jdt.core.compiler>
     <version.com.github.javaparser>3.10.2</version.com.github.javaparser>
-    <version.com.fasterxml.jackson>2.9.5</version.com.fasterxml.jackson>
+    <version.com.fasterxml.jackson>2.9.9</version.com.fasterxml.jackson>
     <version.kubernetes-client>4.1.1</version.kubernetes-client>
     <version.okhttp>3.9.0</version.okhttp>
     <version.io.prometheus>0.5.0</version.io.prometheus>
