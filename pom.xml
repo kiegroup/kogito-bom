@@ -158,6 +158,17 @@
     </repository>
   </repositories>
 
+  <scm>
+    <connection>scm:git:https://github.com/kiegroup/kogito-bom.git</connection>
+    <developerConnection>scm:git:git@github.com:kiegroup/kogito-bom.git</developerConnection>
+    <url>https://github.com/kiegroup/kogito-bom</url>
+  </scm>
+  <developers>
+    <developer>
+      <name>All developers are listed on the team website</name>
+      <url>http://www.kogito.kie.org/community/team.html</url>
+    </developer>
+  </developers>
 
   <dependencyManagement>
     <dependencies>
