@@ -49,7 +49,7 @@ for repository in `cat $organizationDir/kogito-bom/scripts/repository-list.txt` 
         echo "==============================================================================="
         cd $repository
 
-		releaseTagName=r$1
+		releaseTagName=$1
 		git tag -a $releaseTagName -m "Tagging $releaseTagName"
 		git push origin $releaseTagName
         

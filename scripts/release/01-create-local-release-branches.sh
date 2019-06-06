@@ -53,7 +53,7 @@ for repository in `cat $organizationDir/kogito-bom/scripts/repository-list.txt` 
         echo "==============================================================================="
         cd $repository
 
-        releaseBranchName=$1
+        releaseBranchName=r$1
         git checkout -b $releaseBranchName
 
         returnCode=$?
