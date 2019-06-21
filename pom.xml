@@ -109,6 +109,9 @@
     <version.surefire.report.plugin>2.6</version.surefire.report.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
+
+    <version.org.jacoco.agent>0.7.5.20150524194</version.org.jacoco.agent>
+    <version.jacoco.plugin>${version.org.jacoco.agent}</version.jacoco.plugin>
   </properties>
 
   <!-- distributionManagement section -->
@@ -467,6 +470,12 @@
         <groupId>cz.xtf</groupId>
         <artifactId>builder</artifactId>
         <version>${version.cz.xtf}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jacoco</groupId>
+        <artifactId>org.jacoco.agent</artifactId>
+        <version>${version.org.jacoco.agent}</version>
       </dependency>
     </dependencies>
 
@@ -845,6 +854,11 @@
           <groupId>io.openapitools.swagger</groupId>
           <artifactId>swagger-maven-plugin</artifactId>
           <version>${version.swagger.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${version.jacoco.plugin}</version>
         </plugin>
       </plugins>
     </pluginManagement>
