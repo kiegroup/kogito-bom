@@ -59,7 +59,6 @@
     <version.okhttp>3.9.0</version.okhttp>
     <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
-    <version.swagger>1.5.21</version.swagger>
     <version.cz.xtf>0.11</version.cz.xtf>
     <version.antapacheregexp>1.8.2</version.antapacheregexp>
 
@@ -106,7 +105,7 @@
     <version.license.plugin>1.8.0</version.license.plugin>
     <version.javadoc.plugin>3.0.1</version.javadoc.plugin>
     <version.findbugs.plugin>3.0.5</version.findbugs.plugin>
-    <version.swagger.plugin>3.1.8</version.swagger.plugin>
+    <version.swagger.plugin>2.1.0</version.swagger.plugin>
     <version.surefire.report.plugin>2.6</version.surefire.report.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
@@ -457,12 +456,6 @@
         <groupId>io.rest-assured</groupId>
         <artifactId>rest-assured</artifactId>
         <version>${version.io.restassured}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>io.swagger</groupId>
-        <artifactId>swagger-annotations</artifactId>
-        <version>${version.swagger}</version>
       </dependency>
 
       <dependency>
@@ -849,7 +842,7 @@
           <version>${version.io.quarkus}</version>
         </plugin>
         <plugin>
-          <groupId>com.github.kongchen</groupId>
+          <groupId>io.openapitools.swagger</groupId>
           <artifactId>swagger-maven-plugin</artifactId>
           <version>${version.swagger.plugin}</version>
         </plugin>
