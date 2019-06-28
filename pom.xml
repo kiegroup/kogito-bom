@@ -62,7 +62,7 @@
     <version.cz.xtf>0.11</version.cz.xtf>
     <version.antapacheregexp>1.8.2</version.antapacheregexp>
 
-    <version.io.quarkus>0.15.0</version.io.quarkus>
+    <version.io.quarkus>0.18.0</version.io.quarkus>
 
     <version.org.junit>5.4.2</version.org.junit>
     <version.org.junit.jupiter>${version.org.junit}</version.org.junit.jupiter>
