@@ -64,7 +64,7 @@
 
     <version.io.quarkus>0.18.0</version.io.quarkus>
 
-    <version.org.junit>5.4.2</version.org.junit>
+    <version.org.junit>5.5.0-RC2</version.org.junit>
     <version.org.junit.jupiter>${version.org.junit}</version.org.junit.jupiter>
     <version.org.junit.vintage>${version.org.junit}</version.org.junit.vintage>
     <version.org.assertj>3.8.0</version.org.assertj>
