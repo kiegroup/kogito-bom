@@ -110,7 +110,7 @@
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
 
-    <version.org.jacoco.agent>0.7.5.20150524194</version.org.jacoco.agent>
+    <version.org.jacoco.agent>0.8.4</version.org.jacoco.agent>
     <version.jacoco.plugin>${version.org.jacoco.agent}</version.jacoco.plugin>
   </properties>
 
