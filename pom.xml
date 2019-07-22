@@ -55,8 +55,8 @@
     <version.org.eclipse.jdt.core.compiler>4.6.1</version.org.eclipse.jdt.core.compiler>
     <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
     <version.com.fasterxml.jackson>2.9.9</version.com.fasterxml.jackson>
-    <version.kubernetes-client>4.1.1</version.kubernetes-client>
-    <version.okhttp>3.9.0</version.okhttp>
+    <version.kubernetes-client>4.3.0</version.kubernetes-client>
+    <version.okhttp>3.12.0</version.okhttp>
     <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
     <version.cz.xtf>0.11</version.cz.xtf>
