@@ -289,10 +289,15 @@
         <artifactId>okhttp</artifactId>
         <version>${version.okhttp}</version>
       </dependency>
-      <!--  kubernetes client -->
+      <!--  kubernetes and OpenShift clients -->
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>kubernetes-client</artifactId>
+        <version>${version.kubernetes-client}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.fabric8</groupId>
+        <artifactId>openshift-client</artifactId>
         <version>${version.kubernetes-client}</version>
       </dependency>
       <!-- metrics - prometheus -->
