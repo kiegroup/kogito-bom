@@ -50,6 +50,8 @@
     <version.org.kie7>7.22.0.Final</version.org.kie7>
     <version.com.thoughtworks.xstream>1.4.10</version.com.thoughtworks.xstream>
     <version.jaxb>2.3.0</version.jaxb>
+    <version.jsonb>1.0</version.jsonb>
+    <version.jsonp>1.1.4</version.jsonp>
     <version.javax.activation>1.2.0</version.javax.activation>
     <version.com.google.protobuf>3.6.1</version.com.google.protobuf>
     <version.org.eclipse.jdt.core.compiler>4.6.1</version.org.eclipse.jdt.core.compiler>
@@ -432,6 +434,17 @@
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-classworlds</artifactId>
         <version>${version.plexus.classworld}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.json.bind</groupId>
+        <artifactId>javax.json.bind-api</artifactId>
+        <version>${version.jsonb}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.json</artifactId>
+        <version>${version.jsonp}</version>
       </dependency>
 
       <dependency>
