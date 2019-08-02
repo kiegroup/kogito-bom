@@ -63,8 +63,12 @@
     <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
     <version.cz.xtf>0.11</version.cz.xtf>
     <version.antapacheregexp>1.8.2</version.antapacheregexp>
+    <version.org.reflections>0.9.11</version.org.reflections>
+    
+    <version.org.infinispan>10.0.0.Beta4</version.org.infinispan>
+    <version.org.infinispan.protostream>4.3.0.Alpha8</version.org.infinispan.protostream>
 
-    <version.io.quarkus>0.18.0</version.io.quarkus>
+    <version.io.quarkus>0.19.1</version.io.quarkus>
     <version.com.oracle.substratevm>19.0.2</version.com.oracle.substratevm>
 
     <version.org.junit.minor>5.0</version.org.junit.minor> <!-- so that org.junit.platform and org.junit can share the same minor version -->
@@ -114,6 +118,8 @@
     <version.surefire.report.plugin>2.6</version.surefire.report.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
+    <version.jandex.plugin>1.0.6</version.jandex.plugin>
+    
 
     <version.org.jacoco.agent>0.8.4</version.org.jacoco.agent>
     <version.jacoco.plugin>${version.org.jacoco.agent}</version.jacoco.plugin>
@@ -493,6 +499,23 @@
         <groupId>com.oracle.substratevm</groupId>
         <artifactId>svm</artifactId>
         <version>${version.com.oracle.substratevm}</version>
+      </dependency>
+      
+      <!-- infinispan -->
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-client-hotrod</artifactId>
+        <version>${version.org.infinispan}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan.protostream</groupId>
+        <artifactId>protostream</artifactId>
+        <version>${version.org.infinispan.protostream}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-query</artifactId>
+        <version>${version.org.infinispan}</version>      
       </dependency>
 
       <dependency>
@@ -900,6 +923,19 @@
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${version.jacoco.plugin}</version>
         </plugin>
+        <plugin>
+        <groupId>org.jboss.jandex</groupId>
+        <artifactId>jandex-maven-plugin</artifactId>
+        <version>${version.jandex.plugin}</version>
+        <executions>
+          <execution>
+            <id>make-index</id>
+            <goals>
+              <goal>jandex</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       </plugins>
     </pluginManagement>
 
