@@ -66,8 +66,8 @@
     <version.org.reflections>0.9.11</version.org.reflections>
     <version.javax.inject>1</version.javax.inject>
     
-    <version.org.infinispan>10.0.0.Beta4</version.org.infinispan>
-    <version.org.infinispan.protostream>4.3.0.Alpha8</version.org.infinispan.protostream>
+    <version.org.infinispan>10.0.0.Beta3</version.org.infinispan>
+    <version.org.infinispan.protostream>4.3.0.Alpha6</version.org.infinispan.protostream>
 
     <version.io.quarkus>0.19.1</version.io.quarkus>
     <version.com.oracle.substratevm>19.0.2</version.com.oracle.substratevm>
@@ -524,6 +524,16 @@
         <groupId>org.infinispan.protostream</groupId>
         <artifactId>protostream</artifactId>
         <version>${version.org.infinispan.protostream}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-server-hotrod</artifactId>
+        <version>${version.org.infinispan}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-remote-query-server</artifactId>
+        <version>${version.org.infinispan}</version>
       </dependency>
       <dependency>
         <groupId>org.infinispan</groupId>
