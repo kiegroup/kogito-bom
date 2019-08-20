@@ -456,8 +456,8 @@
         <version>${version.jsonb}</version>
       </dependency>
       <dependency>
-        <groupId>org.glassfish</groupId>
-        <artifactId>javax.json</artifactId>
+        <groupId>javax.json</groupId>
+        <artifactId>javax.json-api</artifactId>
         <version>${version.jsonp}</version>
       </dependency>
 
