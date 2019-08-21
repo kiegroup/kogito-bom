@@ -181,6 +181,23 @@
         <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
+      
+      <!-- Data Index -->
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>data-index-service</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>data-index-storage-api</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>data-index-storage-infinispan</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
