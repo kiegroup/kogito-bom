@@ -230,18 +230,18 @@
       <!-- DMN -->
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-dmn-rest-utils</artifactId>
+        <artifactId>kogito-dmn</artifactId>
         <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-dmn-rest-utils</artifactId>
+        <artifactId>kogito-dmn</artifactId>
         <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-dmn-rest-utils</artifactId>
+        <artifactId>kogito-dmn</artifactId>
         <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
