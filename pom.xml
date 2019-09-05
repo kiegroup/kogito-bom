@@ -123,6 +123,7 @@
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
     <version.jandex.plugin>1.0.6</version.jandex.plugin>
+    <version.commons.lang>3.9</version.commons.lang>
 
     <version.org.jacoco.agent>0.8.4</version.org.jacoco.agent>
     <version.jacoco.plugin>${version.org.jacoco.agent}</version.jacoco.plugin>
@@ -576,6 +577,12 @@
         <groupId>org.jacoco</groupId>
         <artifactId>org.jacoco.agent</artifactId>
         <version>${version.org.jacoco.agent}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${version.commons.lang}</version>
       </dependency>
     </dependencies>
 
