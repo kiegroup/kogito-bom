@@ -1054,8 +1054,6 @@
 
   <modules>
     <module>kogito-bom</module>
-    <module>drools-bom</module>
-    <module>jbpm-bom</module>
   </modules>
 
   <profiles>
