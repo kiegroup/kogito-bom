@@ -182,6 +182,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.kafka</groupId>
+        <artifactId>kafka_2.12</artifactId>
+        <version>${version.org.apache.kafka}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
         <version>${version.org.junit.jupiter}</version>

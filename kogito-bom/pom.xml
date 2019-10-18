@@ -190,6 +190,12 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
+        <artifactId>data-index-service</artifactId>
+        <classifier>runner</classifier>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>data-index-storage-api</artifactId>
         <version>${version.org.kie.kogito}</version>
       </dependency>
