@@ -71,7 +71,7 @@
     <version.org.infinispan.protostream>4.3.0.Alpha10</version.org.infinispan.protostream>
 
     <version.io.quarkus>0.27.0</version.io.quarkus>
-    <version.com.oracle.substratevm>19.2.0.1</version.com.oracle.substratevm>
+    <version.com.oracle.substratevm>19.2.1</version.com.oracle.substratevm>
     <version.io.smallrye.reactive>1.0.8</version.io.smallrye.reactive>
 
     <version.org.springframework.kafka>2.2.2.RELEASE</version.org.springframework.kafka>
