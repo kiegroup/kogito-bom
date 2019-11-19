@@ -158,6 +158,51 @@
         <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
+      
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-api</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-api</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-service</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-service</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-management-quarkus-addon</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-management-quarkus-addon</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-management-springboot-addon</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>jobs-management-springboot-addon</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
 
       <dependency>
         <groupId>org.kie.kogito</groupId>
