@@ -320,18 +320,18 @@
       <!-- Drools RuleUnit Support -->
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-ruleunits</artifactId>
+        <artifactId>kogito-ruleunits</artifactId>
         <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-ruleunits</artifactId>
+        <artifactId>kogito-ruleunits</artifactId>
         <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-ruleunits</artifactId>
+        <artifactId>kogito-ruleunits</artifactId>
         <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
