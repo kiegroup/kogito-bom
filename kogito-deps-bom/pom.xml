@@ -14,6 +14,28 @@
 
   <dependencyManagement>
     <dependencies>
+
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-canonical-model</artifactId>
+        <version>${version.org.kie7_snapshot}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-model-compiler</artifactId>
+        <version>${version.org.kie7_snapshot}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel-parser</artifactId>
+        <version>${version.org.kie7_snapshot}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel-compiler</artifactId>
+        <version>${version.org.kie7_snapshot}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-api</artifactId>
