@@ -55,7 +55,7 @@
     <version.com.google.protobuf>3.6.1</version.com.google.protobuf>
     <version.org.eclipse.jdt.core.compiler>4.6.1</version.org.eclipse.jdt.core.compiler>
     <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
-    <version.com.fasterxml.jackson>2.9.9</version.com.fasterxml.jackson>
+    <version.com.fasterxml.jackson>2.9.10</version.com.fasterxml.jackson>
     <version.kubernetes-client>4.4.2</version.kubernetes-client>
     <version.okhttp>3.12.0</version.okhttp>
     <version.io.prometheus>0.5.0</version.io.prometheus>
@@ -66,10 +66,11 @@
     <version.javax.inject>1</version.javax.inject>
     <version.javax.annotation-api>1.3.2</version.javax.annotation-api>
 
-    <version.org.infinispan>10.0.0.CR1</version.org.infinispan>
-    <version.org.infinispan.protostream>4.3.0.Alpha10</version.org.infinispan.protostream>
+    <version.org.infinispan>10.0.0.Final</version.org.infinispan>
+    <version.org.infinispan.image>10.0.0.Final-1</version.org.infinispan.image>
+    <version.org.infinispan.protostream>4.3.0.Final</version.org.infinispan.protostream>
 
-    <version.io.quarkus>0.27.0</version.io.quarkus>
+    <version.io.quarkus>1.0.1.Final</version.io.quarkus>
     <version.com.oracle.substratevm>19.2.1</version.com.oracle.substratevm>
     <version.io.smallrye.reactive>1.0.8</version.io.smallrye.reactive>
 
