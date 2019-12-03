@@ -503,6 +503,19 @@
         <classifier>sources</classifier>
       </dependency>
       
+      <!-- spring boot starter -->      
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-springboot-starter</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-springboot-starter</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      
     </dependencies>
   </dependencyManagement>
 
