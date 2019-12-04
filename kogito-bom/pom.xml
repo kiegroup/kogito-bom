@@ -339,18 +339,18 @@
       <!-- Drools Model -->
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-model</artifactId>
+        <artifactId>kogito-drools-model</artifactId>
         <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-model</artifactId>
+        <artifactId>kogito-drools-model</artifactId>
         <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-model</artifactId>
+        <artifactId>kogito-drools-model</artifactId>
         <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
