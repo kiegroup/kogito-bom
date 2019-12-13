@@ -247,6 +247,11 @@
       <!-- drools -->
       <dependency>
         <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-drools</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-reflective</artifactId>
         <version>${version.org.kie.kogito}</version>
       </dependency>
@@ -313,6 +318,25 @@
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+      <!-- Drools RuleUnit Support -->
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-ruleunits</artifactId>
+        <version>${version.org.kie.kogito}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-ruleunits</artifactId>
+        <version>${version.org.kie.kogito}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-ruleunits</artifactId>
         <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -390,7 +414,8 @@
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
-      <!-- /Drools Model -->
+
+      <!-- Drools Compiler -->
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-compiler</artifactId>
