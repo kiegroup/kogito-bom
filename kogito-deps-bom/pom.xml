@@ -77,9 +77,9 @@
       </dependency>
 
       <dependency>
-        <groupId>org.eclipse.jdt.core.compiler</groupId>
+        <groupId>org.eclipse.jdt</groupId>
         <artifactId>ecj</artifactId>
-        <version>${version.org.eclipse.jdt.core.compiler}</version>
+        <version>${version.org.eclipse.jdt}</version>
       </dependency>
 
       <dependency>
