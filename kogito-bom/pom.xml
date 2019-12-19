@@ -341,75 +341,22 @@
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
+
       <!-- Drools Model -->
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-canonical-model</artifactId>
+        <artifactId>kogito-drools-model</artifactId>
         <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-canonical-model</artifactId>
-        <version>${version.org.kie.kogito}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-canonical-model</artifactId>
-        <version>${version.org.kie.kogito}</version>
-        <type>test-jar</type>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-mvel-parser</artifactId>
-        <version>${version.org.kie.kogito}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-mvel-parser</artifactId>
+        <artifactId>kogito-drools-model</artifactId>
         <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-mvel-parser</artifactId>
-        <version>${version.org.kie.kogito}</version>
-        <type>test-jar</type>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-mvel-compiler</artifactId>
-        <version>${version.org.kie.kogito}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-mvel-compiler</artifactId>
-        <version>${version.org.kie.kogito}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-mvel-compiler</artifactId>
-        <version>${version.org.kie.kogito}</version>
-        <type>test-jar</type>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-model-compiler</artifactId>
-        <version>${version.org.kie.kogito}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-model-compiler</artifactId>
-        <version>${version.org.kie.kogito}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-model-compiler</artifactId>
+        <artifactId>kogito-drools-model</artifactId>
         <version>${version.org.kie.kogito}</version>
         <type>test-jar</type>
         <scope>test</scope>
