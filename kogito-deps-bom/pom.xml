@@ -38,13 +38,13 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>${version.org.kie7}</version>
+        <version>${version.org.kie7.final}</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
         <type>test-jar</type>
-        <version>${version.org.kie7}</version>
+        <version>${version.org.kie7.final}</version>
       </dependency>
 
       <dependency>
