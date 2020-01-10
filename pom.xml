@@ -57,11 +57,11 @@
     <version.org.eclipse.jdt>3.19.0</version.org.eclipse.jdt>
     <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
     <version.com.fasterxml.jackson>2.9.10</version.com.fasterxml.jackson>
-    <version.kubernetes-client>4.4.2</version.kubernetes-client>
+    <version.kubernetes-client>4.6.2</version.kubernetes-client>
     <version.okhttp>3.12.0</version.okhttp>
     <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
-    <version.cz.xtf>0.13</version.cz.xtf>
+    <version.cz.xtf>0.14</version.cz.xtf>
     <version.antapacheregexp>1.8.2</version.antapacheregexp>
     <version.org.reflections>0.9.11</version.org.reflections>
     <version.javax.inject>1</version.javax.inject>
