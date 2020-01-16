@@ -467,6 +467,13 @@
         <artifactId>spring-kafka</artifactId>
         <version>${version.org.springframework.kafka}</version>
       </dependency>
+      
+      <!-- predictions/machine learning related -->
+      <dependency>
+        <groupId>com.github.haifengl</groupId>
+        <artifactId>smile-core</artifactId>
+        <version>${version.com.github.haifengl.smile}</version>
+      </dependency>
 
       <dependency>
         <groupId>io.rest-assured</groupId>
