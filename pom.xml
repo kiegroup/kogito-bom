@@ -129,7 +129,8 @@
     <version.surefire.report.plugin>2.6</version.surefire.report.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
-    <version.jandex.plugin>1.0.6</version.jandex.plugin>    
+    <version.jandex.plugin>1.0.6</version.jandex.plugin>
+    <version.org.jboss.spec.javax.annotation.jboss-annotations-api_1.2_spec>1.0.0.Final</version.org.jboss.spec.javax.annotation.jboss-annotations-api_1.2_spec>
 
     <version.org.jacoco.agent>0.8.4</version.org.jacoco.agent>
     <version.jacoco.plugin>${version.org.jacoco.agent}</version.jacoco.plugin>
