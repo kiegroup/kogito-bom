@@ -46,8 +46,8 @@
     <version.org.antlr4>4.7.2</version.org.antlr4>
     <version.org.slf4j>1.7.25</version.org.slf4j>
     <version.org.mvel>2.4.4.Final</version.org.mvel>
-    <version.org.kie7.final>7.31.0.Final</version.org.kie7.final>
-    <version.org.kie7>7.32.0.k20191223</version.org.kie7>
+    <version.org.kie7.final>7.32.0.Final</version.org.kie7.final>
+    <version.org.kie7>7.32.0.Final</version.org.kie7>
     <version.com.thoughtworks.xstream>1.4.11.1</version.com.thoughtworks.xstream>
     <version.jaxb>2.3.0</version.jaxb>
     <version.jsonb>1.0</version.jsonb>
@@ -78,7 +78,7 @@
     <version.io.smallrye.reactive>1.0.8</version.io.smallrye.reactive>
 
     <version.org.springframework.kafka>2.2.2.RELEASE</version.org.springframework.kafka>
-    
+
     <version.com.github.haifengl.smile>1.5.2</version.com.github.haifengl.smile>
 
     <version.org.junit.minor>5.0</version.org.junit.minor> <!-- so that org.junit.platform and org.junit can share the same minor version -->
@@ -130,7 +130,7 @@
     <version.surefire.report.plugin>2.6</version.surefire.report.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
-    <version.jandex.plugin>1.0.6</version.jandex.plugin>    
+    <version.jandex.plugin>1.0.6</version.jandex.plugin>
 
     <version.org.jacoco.agent>0.8.4</version.org.jacoco.agent>
     <version.jacoco.plugin>${version.org.jacoco.agent}</version.jacoco.plugin>
