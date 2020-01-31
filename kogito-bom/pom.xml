@@ -127,12 +127,12 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>infinispan-quarkus-health</artifactId>
+        <artifactId>infinispan-quarkus-health-addon</artifactId>
         <version>${version.org.kie.kogito}</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>infinispan-quarkus-health</artifactId>
+        <artifactId>infinispan-quarkus-health-addon</artifactId>
         <version>${version.org.kie.kogito}</version>
         <classifier>sources</classifier>
       </dependency>
