@@ -35,7 +35,7 @@ pipeline {
                 }
             }
         }
-        stage('Build submarine-cloud') {
+        stage('Build kogito-cloud') {
             steps {
                 dir("kogito-cloud") {
                     script {
@@ -51,6 +51,8 @@ pipeline {
                     script {
                         githubscm.checkoutIfExists('kogito-examples', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
                         maven.runMavenWithSubmarineSettings('clean install', false)
+                        // Don't run with tests so far, see: https://github.com/quarkusio/quarkus/issues/6885
+                        maven.runMavenWithSubmarineSettings('clean install -Ppersistence', true)
                     }
                 }
             }
