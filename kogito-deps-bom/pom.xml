@@ -178,12 +178,12 @@
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>kubernetes-client</artifactId>
-        <version>${version.io.fabric}</version>
+        <version>${version.io.fabric8.kubernetes-client}</version>
       </dependency>
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>openshift-client</artifactId>
-        <version>${version.io.fabric}</version>
+        <version>${version.io.fabric8.kubernetes-client}</version>
       </dependency>
       <!-- metrics - prometheus -->
       <dependency>
@@ -507,7 +507,7 @@
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>kubernetes-server-mock</artifactId>
-        <version>${version.kubernetes-client}</version>
+        <version>${version.io.fabric8.kubernetes-client}</version>
         <scope>test</scope>
       </dependency>
 
